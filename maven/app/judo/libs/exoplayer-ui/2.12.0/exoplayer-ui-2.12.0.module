@@ -1,0 +1,127 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "app.judo.libs",
+    "module": "exoplayer-ui",
+    "version": "2.12.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.1.1",
+      "buildId": "sc54xnnfvjg4thb6eutluf4pxi"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media",
+          "module": "media",
+          "version": {
+            "requires": "1.0.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exoplayer-ui-2.12.0.aar",
+          "url": "exoplayer-ui-2.12.0.aar",
+          "size": 459682,
+          "sha512": "116683c9016220791d4ffd2083328d2c09edaf1de0fb5925b5acfb8e6820a4c1088de586919d81590aaa7427a0478c4410021d8e111b4fe5c65c4791fd2c516a",
+          "sha256": "79dd79020e642f3179c9d0f19792f534b26b5c3bc762842526b5bde1a1efd925",
+          "sha1": "1eb66fd81dded4c7c4c8147d7ebf2130f42d87f7",
+          "md5": "172a6e7aae8d8d3b365ff578d05101f8"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "app.judo.libs",
+          "module": "exoplayer-core",
+          "version": {
+            "requires": "2.12.0"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.recyclerview",
+          "module": "recyclerview",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "27.1-android"
+          },
+          "excludes": [
+            {
+              "group": "com.google.j2objc",
+              "module": "j2objc-annotations"
+            },
+            {
+              "group": "org.checkerframework",
+              "module": "checker-compat-qual"
+            },
+            {
+              "group": "com.google.code.findbugs",
+              "module": "jsr305"
+            },
+            {
+              "group": "org.codehaus.mojo",
+              "module": "animal-sniffer-annotations"
+            },
+            {
+              "group": "com.google.errorprone",
+              "module": "error_prone_annotations"
+            }
+          ]
+        },
+        {
+          "group": "androidx.media",
+          "module": "media",
+          "version": {
+            "requires": "1.0.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exoplayer-ui-2.12.0.aar",
+          "url": "exoplayer-ui-2.12.0.aar",
+          "size": 459682,
+          "sha512": "116683c9016220791d4ffd2083328d2c09edaf1de0fb5925b5acfb8e6820a4c1088de586919d81590aaa7427a0478c4410021d8e111b4fe5c65c4791fd2c516a",
+          "sha256": "79dd79020e642f3179c9d0f19792f534b26b5c3bc762842526b5bde1a1efd925",
+          "sha1": "1eb66fd81dded4c7c4c8147d7ebf2130f42d87f7",
+          "md5": "172a6e7aae8d8d3b365ff578d05101f8"
+        }
+      ]
+    }
+  ]
+}

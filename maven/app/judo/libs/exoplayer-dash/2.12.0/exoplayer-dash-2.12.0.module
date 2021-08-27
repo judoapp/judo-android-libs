@@ -1,0 +1,104 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "app.judo.libs",
+    "module": "exoplayer-dash",
+    "version": "2.12.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.1.1",
+      "buildId": "5g33q4jk3jb23bov43rpmav3oa"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "exoplayer-dash-2.12.0.aar",
+          "url": "exoplayer-dash-2.12.0.aar",
+          "size": 117046,
+          "sha512": "0006adcfa21eca56e33bcf3f4ac861480302f3aa9c9243318d6201703ec96da0979ce75946d69e2ce33b01a65cff2b91cd62c2c8ecc063010e3714236da59972",
+          "sha256": "c9ebe950b0fb4898d216220b3432523ca7564312fcdb199e3f1598b6c11b6ce4",
+          "sha1": "6dbb4f61b5f6a4049a5b81f9159ebd70b883edd0",
+          "md5": "e4ac05c307a2f94e0de987f5089cd36e"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "app.judo.libs",
+          "module": "exoplayer-core",
+          "version": {
+            "requires": "2.12.0"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "27.1-android"
+          },
+          "excludes": [
+            {
+              "group": "com.google.j2objc",
+              "module": "j2objc-annotations"
+            },
+            {
+              "group": "org.checkerframework",
+              "module": "checker-compat-qual"
+            },
+            {
+              "group": "com.google.code.findbugs",
+              "module": "jsr305"
+            },
+            {
+              "group": "org.codehaus.mojo",
+              "module": "animal-sniffer-annotations"
+            },
+            {
+              "group": "com.google.errorprone",
+              "module": "error_prone_annotations"
+            }
+          ]
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exoplayer-dash-2.12.0.aar",
+          "url": "exoplayer-dash-2.12.0.aar",
+          "size": 117046,
+          "sha512": "0006adcfa21eca56e33bcf3f4ac861480302f3aa9c9243318d6201703ec96da0979ce75946d69e2ce33b01a65cff2b91cd62c2c8ecc063010e3714236da59972",
+          "sha256": "c9ebe950b0fb4898d216220b3432523ca7564312fcdb199e3f1598b6c11b6ce4",
+          "sha1": "6dbb4f61b5f6a4049a5b81f9159ebd70b883edd0",
+          "md5": "e4ac05c307a2f94e0de987f5089cd36e"
+        }
+      ]
+    }
+  ]
+}

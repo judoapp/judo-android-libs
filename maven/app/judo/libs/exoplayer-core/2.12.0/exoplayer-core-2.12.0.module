@@ -1,0 +1,127 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "app.judo.libs",
+    "module": "exoplayer-core",
+    "version": "2.12.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.1.1",
+      "buildId": "zk2wdcjsanhrfj22j4fitnwd7a"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "app.judo.libs",
+          "module": "exoplayer-common",
+          "version": {
+            "requires": "2.12.0"
+          }
+        },
+        {
+          "group": "app.judo.libs",
+          "module": "exoplayer-extractor",
+          "version": {
+            "requires": "2.12.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exoplayer-core-2.12.0.aar",
+          "url": "exoplayer-core-2.12.0.aar",
+          "size": 1305778,
+          "sha512": "a6dbd2f4caf4cd4d42f7d700b2633e58038dae3240893c3e9a3bf9bf40d320291cb709a4b171e484900309a91cca06351c40d3984f5e369fb163d3726f07ebc9",
+          "sha256": "9554fb6b047e012ffc8cb85ac192a9181375c8d74eb80eb606fa1f3538c385f5",
+          "sha1": "977e212ed880174366318f949e56416ed24feeb8",
+          "md5": "ff1021673e51877d2181677b305122b1"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "27.1-android"
+          },
+          "excludes": [
+            {
+              "group": "com.google.j2objc",
+              "module": "j2objc-annotations"
+            },
+            {
+              "group": "org.checkerframework",
+              "module": "checker-compat-qual"
+            },
+            {
+              "group": "com.google.code.findbugs",
+              "module": "jsr305"
+            },
+            {
+              "group": "org.codehaus.mojo",
+              "module": "animal-sniffer-annotations"
+            },
+            {
+              "group": "com.google.errorprone",
+              "module": "error_prone_annotations"
+            }
+          ]
+        },
+        {
+          "group": "app.judo.libs",
+          "module": "exoplayer-common",
+          "version": {
+            "requires": "2.12.0"
+          }
+        },
+        {
+          "group": "app.judo.libs",
+          "module": "exoplayer-extractor",
+          "version": {
+            "requires": "2.12.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exoplayer-core-2.12.0.aar",
+          "url": "exoplayer-core-2.12.0.aar",
+          "size": 1305778,
+          "sha512": "a6dbd2f4caf4cd4d42f7d700b2633e58038dae3240893c3e9a3bf9bf40d320291cb709a4b171e484900309a91cca06351c40d3984f5e369fb163d3726f07ebc9",
+          "sha256": "9554fb6b047e012ffc8cb85ac192a9181375c8d74eb80eb606fa1f3538c385f5",
+          "sha1": "977e212ed880174366318f949e56416ed24feeb8",
+          "md5": "ff1021673e51877d2181677b305122b1"
+        }
+      ]
+    }
+  ]
+}
